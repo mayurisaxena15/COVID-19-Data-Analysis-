@@ -13,7 +13,7 @@ Data transformation was performed using Power Query. The following steps were ta
 * All null values were identified and removed to ensure data quality and accuracy. This step is crucial to avoid errors in calculations and visualizations.
 * Columns that were not relevant to the analysis were removed. This step helps in simplifying the dataset and focusing on the most critical information.
 * Two new measures in the table were added: Death rate and recovery rate.This was done by using the following formulas:
-  '''dax
+  ```dax
   Death Rate = DIVIDE(SUM('Table 1'[TotalDeaths]),SUM('Table 1'[TotalCases]))
   Recovery Rate = DIVIDE(SUM('Table 1'[TotalRecovered]),SUM('Table 1'[TotalCases]))
   ```
